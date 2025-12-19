@@ -44,7 +44,7 @@ export const SwipeCard = ({ image, onVote, index }: SwipeCardProps) => {
       onDragEnd={handleDragEnd}
       animate={controls}
       style={{ x, rotate, opacity, zIndex: 100 - index }}
-      className="absolute top-0 w-full h-full rounded-3xl overflow-hidden shadow-2xl bg-black cursor-grab active:cursor-grabbing touch-none"
+      className="absolute top-0 w-full max-w-sm md:max-w-md h-full rounded-3xl overflow-hidden shadow-2xl bg-black cursor-grab active:cursor-grabbing touch-none"
     >
       <img
         src={image.url}
